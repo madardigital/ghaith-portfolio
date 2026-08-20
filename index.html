@@ -16,9 +16,9 @@
       --paper:#f7f6f2;--white:#fff;--ink:#172033;--muted:#697386;--line:#e3e6ea;
       --green:#25d366;--shadow:0 14px 34px rgba(10,27,52,.10)
     }
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:"Tajawal","Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}
-    body.modal-open{overflow:hidden} a{color:inherit;text-decoration:none} img{display:block;width:100%} button{font:inherit}
+    body.modal-open{overflow:hidden}a{color:inherit;text-decoration:none}img{display:block;width:100%}button{font:inherit}
     .container{width:min(1120px,calc(100% - 28px));margin:auto}
     .topbar{position:sticky;top:0;z-index:50;background:rgba(247,246,242,.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(10,27,52,.08)}
     .topbar .inner{height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -60,11 +60,15 @@
     .modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(5,14,27,.82);backdrop-filter:blur(8px)}.modal.open{display:flex}
     .modal-panel{width:min(1080px,100%);height:min(90vh,850px);background:#fff;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.35)}
     .modal-head{height:62px;display:flex;align-items:center;gap:10px;padding:0 14px;border-bottom:1px solid var(--line);background:#fbfbfa}.modal-head h3{margin:0;flex:1;font-size:15px;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.icon-btn{border:0;background:#edf0f3;width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:20px;color:var(--navy)}.external{padding:8px 12px;border-radius:10px;background:#f1f3f5;font-size:12px;font-weight:800;color:#44546b;display:none}
-    .modal-body{position:relative;flex:1;min-height:0;background:#eef1f4}.preview-frame{width:100%;height:100%;border:0;background:#fff}.gallery-wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;gap:12px}.gallery-stage{width:min(860px,100%);height:min(67vh,650px);display:grid;place-items:center;overflow:hidden;border-radius:16px;background:#fff;box-shadow:0 12px 30px rgba(0,0,0,.12);touch-action:pan-y}.gallery-stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}.gallery-atlas{width:100%;height:100%;background-repeat:no-repeat;background-color:#fff}
+    .modal-body{position:relative;flex:1;min-height:0;background:#eef1f4}.preview-frame{width:100%;height:100%;border:0;background:#fff}
+    .gallery-wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;gap:12px;overflow:auto}
+    .gallery-stage{width:min(860px,100%);max-height:70vh;display:grid;place-items:center;overflow:hidden;border-radius:16px;background:#fff;box-shadow:0 12px 30px rgba(0,0,0,.12);touch-action:pan-y;padding:10px}
+    .gallery-stage img{display:block;max-width:100%;max-height:68vh;width:auto;height:auto;object-fit:contain}
+    .gallery-atlas{width:100%;height:auto;background-repeat:no-repeat;background-color:#fff;border-radius:10px}
     .gallery-controls{display:flex;align-items:center;justify-content:center;gap:12px}.gallery-nav{border:0;background:var(--navy);color:#fff;width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:19px}.gallery-count{font-size:13px;color:#506078;min-width:60px;text-align:center}.gallery-hint{margin:0;color:#7b8594;font-size:11px}
 
     @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-card{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media (max-width:620px){.container{width:min(100% - 20px,1120px)}.hero{padding:54px 0 46px}.hero h1{letter-spacing:-.6px}.top-cta{font-size:12px;padding:8px 11px}.grid,.grid.four{grid-template-columns:1fr}.section-head{align-items:start}section.portfolio{padding-top:46px}.review-strip{grid-template-columns:1fr;gap:10px}.review-card:nth-child(n+4){display:none}.contact-card{align-items:stretch;flex-direction:column}.wa{width:100%}.modal{padding:8px}.modal-panel{height:94vh;border-radius:16px}.modal-head{height:58px}.external{display:none}.gallery-stage{height:72vh}}
+    @media (max-width:620px){.container{width:min(100% - 20px,1120px)}.hero{padding:54px 0 46px}.hero h1{letter-spacing:-.6px}.top-cta{font-size:12px;padding:8px 11px}.grid,.grid.four{grid-template-columns:1fr}.section-head{align-items:start}section.portfolio{padding-top:46px}.review-strip{grid-template-columns:1fr;gap:10px}.review-card:nth-child(n+4){display:none}.contact-card{align-items:stretch;flex-direction:column}.wa{width:100%}.modal{padding:8px}.modal-panel{height:94vh;border-radius:16px}.modal-head{height:58px}.external{display:none}.gallery-stage{width:100%;max-height:74vh}}
   </style>
 </head>
 <body>
@@ -100,6 +104,7 @@
         <article class="card preview-card" data-title="ملف إنجاز التدريب الميداني — غرفة المدينة المنورة" data-preview="https://drive.google.com/file/d/14fsdM9isQaNR5wVNHLVGE-4rTh1UQ7fN/preview"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=14fsdM9isQaNR5wVNHLVGE-4rTh1UQ7fN&sz=w1200" alt="ملف إنجاز"></div><div class="card-body"><h3>ملف إنجاز التدريب الميداني — غرفة المدينة المنورة</h3><span class="card-link">معاينة النموذج</span></div></article>
         <article class="card preview-card" data-title="ملف إنجاز التدريب التعاوني — جمعية التميز الرياضي" data-preview="https://drive.google.com/file/d/1N-6Xp8hXZZiUphIikkOUnvomu2b1B0kG/preview"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1N-6Xp8hXZZiUphIikkOUnvomu2b1B0kG&sz=w1200" alt="ملف إنجاز"></div><div class="card-body"><h3>ملف إنجاز التدريب التعاوني — جمعية التميز الرياضي</h3><span class="card-link">معاينة النموذج</span></div></article>
         <article class="card preview-card" data-title="التقرير النهائي للتدريب — مركز الرعاية الصحية الأولية بالشويمس" data-preview="https://drive.google.com/file/d/1XlyF6XfFszJb8chFtR-ncsUN5yG7NQMD/preview"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1XlyF6XfFszJb8chFtR-ncsUN5yG7NQMD&sz=w1200" alt="تقرير التدريب"></div><div class="card-body"><h3>التقرير النهائي للتدريب — مركز الرعاية الصحية الأولية بالشويمس</h3><span class="card-link">معاينة النموذج</span></div></article>
+        <article class="card preview-card" data-title="ملف إنجاز الفنون الصحفية — نموذج 01" data-preview="https://drive.google.com/file/d/177FJzNWbOTWiRTsEBkzR60cSimHTizKP/preview"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=177FJzNWbOTWiRTsEBkzR60cSimHTizKP&sz=w1200" alt="ملف إنجاز الفنون الصحفية"></div><div class="card-body"><h3>ملف إنجاز الفنون الصحفية — نموذج 01</h3><span class="card-link">معاينة النموذج</span></div></article>
       </div>
     </div></section>
 
@@ -133,7 +138,7 @@
     <section class="portfolio" id="design"><div class="container">
       <div class="section-head"><div><h2>مطويات وإنفوجرافيك وبوسترات</h2><p>نماذج مختارة من التصاميم المرئية.</p></div></div>
       <div class="grid four">
-        <article class="card gallery-card" data-gallery="firstAid" data-title="دليل توعوي للإسعافات الأولية"><div class="cover tall"><img loading="lazy" src="https://madardigital.github.io/hafed-portfolio/assets/first-aid-guide.webp" alt="مطوية الإسعافات الأولية"></div><div class="card-body"><h3>دليل توعوي للإسعافات الأولية</h3><span class="card-link">معاينة التصميم</span></div></article>
+        <article class="card gallery-card" data-gallery="firstAid" data-title="مطوية - الإسعافات الأولية"><div class="cover tall"><img loading="lazy" src="https://madardigital.github.io/hafed-portfolio/assets/first-aid-guide.webp" alt="مطوية الإسعافات الأولية"></div><div class="card-body"><h3>مطوية - الإسعافات الأولية</h3><span class="card-link">معاينة التصميم</span></div></article>
         <article class="card gallery-card" data-gallery="digitalTransform" data-title="التحول الرقمي — كن جزءًا من التغيير"><div class="cover tall"><div class="atlas-cover" data-cell="1,7"></div></div><div class="card-body"><h3>التحول الرقمي — إنفوجرافيك</h3><span class="card-link">معاينة التصميم</span></div></article>
         <article class="card gallery-card" data-gallery="nano" data-title="تطبيقات تكنولوجيا النانو في الطب"><div class="cover tall"><div class="atlas-cover" data-cell="2,7"></div></div><div class="card-body"><h3>تطبيقات تكنولوجيا النانو في الطب</h3><span class="card-link">معاينة التصميم</span></div></article>
         <article class="card gallery-card" data-gallery="posters" data-title="بوسترات مختارة"><div class="cover tall"><div class="atlas-cover" data-cell="2,8"></div></div><div class="card-body"><h3>بوسترات مختارة</h3><span class="card-link">استعراض البوسترات</span></div></article>
@@ -153,16 +158,16 @@
     <section class="portfolio" id="reviews"><div class="container">
       <div class="section-head"><div><h2>آراء العملاء</h2></div><span class="tag">مختارات</span></div>
       <div class="review-strip">
-        <div class="review-card gallery-card" data-gallery="reviews" data-start="0" data-title="آراء العملاء"><div class="review-shot" data-rect="0,12700,800,1100"></div></div>
-        <div class="review-card gallery-card" data-gallery="reviews" data-start="1" data-title="آراء العملاء"><div class="review-shot" data-rect="1600,12700,800,1100"></div></div>
-        <div class="review-card gallery-card" data-gallery="reviews" data-start="2" data-title="آراء العملاء"><div class="review-shot" data-rect="800,13800,800,1100"></div></div>
-        <div class="review-card gallery-card" data-gallery="reviews" data-start="3" data-title="آراء العملاء"><div class="review-shot" data-rect="2400,13800,800,1100"></div></div>
-        <div class="review-card gallery-card" data-gallery="reviews" data-start="4" data-title="آراء العملاء"><div class="review-shot" data-rect="0,14900,800,1100"></div></div>
-        <div class="review-card gallery-card" data-gallery="reviews" data-start="5" data-title="آراء العملاء"><div class="review-shot" data-rect="1600,14900,800,1100"></div></div>
+        <div class="review-card gallery-card" data-gallery="reviews" data-start="0" data-title="آراء العملاء"><div class="review-shot" data-rect="800,12700,800,1100"></div></div>
+        <div class="review-card gallery-card" data-gallery="reviews" data-start="1" data-title="آراء العملاء"><div class="review-shot" data-rect="2400,12700,800,1100"></div></div>
+        <div class="review-card gallery-card" data-gallery="reviews" data-start="2" data-title="آراء العملاء"><div class="review-shot" data-rect="0,13800,800,1100"></div></div>
+        <div class="review-card gallery-card" data-gallery="reviews" data-start="3" data-title="آراء العملاء"><div class="review-shot" data-rect="1600,13800,800,1100"></div></div>
+        <div class="review-card gallery-card" data-gallery="reviews" data-start="4" data-title="آراء العملاء"><div class="review-shot" data-rect="800,14900,800,1100"></div></div>
+        <div class="review-card gallery-card" data-gallery="reviews" data-start="5" data-title="آراء العملاء"><div class="review-shot" data-rect="2400,14900,800,1100"></div></div>
       </div>
     </div></section>
 
-    <section class="contact"><div class="container"><div class="contact-card"><div><h2>لديك ملف أو خدمة مختلفة؟</h2><p>أرسل نوع الملف ومتطلباته، وسنخبرك بإمكانية التنفيذ.</p></div><a class="btn wa" href="https://wa.me/966548296477?text=مرحبًا،%20لدي%20ملف%20وأرغب%20في%20معرفة%20إمكانية%20تنفيذه." target="_blank" rel="noopener">تواصل عبر واتساب</a></div></div></section>
+    <section class="contact"><div class="container"><div class="contact-card"><div><h2>لديك ملف أو خدمة مختلفة؟</h2><p>أرسل نوع الملف ومتطلباته.</p></div><a class="btn wa" href="https://wa.me/966548296477?text=مرحبًا،%20لدي%20ملف%20وأرغب%20في%20معرفة%20إمكانية%20تنفيذه." target="_blank" rel="noopener">تواصل عبر واتساب</a></div></div></section>
   </main>
 
   <footer><div class="container">غيث — تصميم وتنسيق الملفات</div></footer>
@@ -194,7 +199,7 @@
       posters:[{kind:'atlas',rect:cell(2,8)},{kind:'atlas',rect:cell(0,9)},{kind:'atlas',rect:cell(3,8)}],
       cv:[0,1,2,3].map(c=>({kind:'atlas',rect:cell(c,5)})),
       reviews:[
-        [0,12700,800,1100],[1600,12700,800,1100],[800,13800,800,1100],[2400,13800,800,1100],[0,14900,800,1100],[1600,14900,800,1100]
+        [800,12700,800,1100],[2400,12700,800,1100],[0,13800,800,1100],[1600,13800,800,1100],[800,14900,800,1100],[2400,14900,800,1100]
       ].map(rect=>({kind:'atlas',rect}))
     };
 
@@ -205,7 +210,11 @@
 
     document.querySelectorAll('.preview-card').forEach(card=>card.addEventListener('click',()=>{const src=card.dataset.preview;openModal(card.dataset.title);external.href=src;external.style.display='inline-flex';body.innerHTML=`<iframe class="preview-frame" src="${src}" title="${card.dataset.title}" loading="eager" allowfullscreen></iframe>`}));
 
-    function galleryMarkup(item){if(item.kind==='image')return `<img src="${item.url}" alt="معاينة">`;return `<div class="gallery-atlas" style="${rectStyle(item.rect)}"></div>`}
+    function galleryMarkup(item){
+      if(item.kind==='image')return `<img src="${item.url}" alt="معاينة">`;
+      const [,,w,h]=item.rect,ratio=w/h;
+      return `<div class="gallery-atlas" style="${rectStyle(item.rect)}aspect-ratio:${w}/${h};max-width:min(100%,calc(68vh * ${ratio}));"></div>`
+    }
     function renderGallery(){const items=GALLERIES[currentGallery]||[];if(!items.length)return;currentIndex=(currentIndex+items.length)%items.length;const item=items[currentIndex];body.innerHTML=`<div class="gallery-wrap"><div class="gallery-stage" id="galleryStage">${galleryMarkup(item)}</div>${items.length>1?`<div class="gallery-controls"><button class="gallery-nav" id="prevGallery">→</button><strong class="gallery-count">${currentIndex+1} / ${items.length}</strong><button class="gallery-nav" id="nextGallery">←</button></div><p class="gallery-hint">استخدم الأسهم أو اسحب للتنقل</p>`:''}</div>`;if(items.length>1){document.getElementById('prevGallery').onclick=()=>{currentIndex--;renderGallery()};document.getElementById('nextGallery').onclick=()=>{currentIndex++;renderGallery()};const stage=document.getElementById('galleryStage');stage.addEventListener('touchstart',e=>touchX=e.changedTouches[0].screenX,{passive:true});stage.addEventListener('touchend',e=>{const dx=e.changedTouches[0].screenX-touchX;if(Math.abs(dx)>45){currentIndex+=dx>0?-1:1;renderGallery()}},{passive:true})}}
     document.querySelectorAll('.gallery-card').forEach(card=>card.addEventListener('click',()=>{currentGallery=card.dataset.gallery;currentIndex=Number(card.dataset.start||0);openModal(card.dataset.title);renderGallery()}));
   </script>
