@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>غيث | نماذج أعمال تصميم وتنسيق الملفات</title>
+  <meta name="description" content="نماذج مختارة في تنسيق وتصميم التقارير والمستندات وملفات التدريب والمشاريع والعروض التقديمية وCV.">
+  <meta name="theme-color" content="#0a1b34">
+  <meta property="og:title" content="غيث | نماذج الأعمال">
+  <meta property="og:description" content="تقارير، مستندات، ملفات تدريب ومشاريع، عروض تقديمية وCV — نماذج مختارة وجاهزة للاستعراض.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://madardigital.github.io/ghaith-portfolio/">
+  <style>
+    :root{
+      --navy:#0a1b34;
+      --navy-2:#102947;
+      --gold:#d7b56d;
+      --gold-soft:#f4ead2;
+      --paper:#f7f6f2;
+      --white:#fff;
+      --ink:#172033;
+      --muted:#697386;
+      --line:#e3e6ea;
+      --green:#1f9d67;
+      --shadow:0 14px 34px rgba(10,27,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Tajawal","Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    img{display:block;width:100%}
+    button{font:inherit}
+    .container{width:min(1120px,calc(100% - 28px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(247,246,242,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(10,27,52,.08)}
+    .topbar .inner{height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy)}
+    .brand-mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold);border:1px solid rgba(215,181,109,.65);font-size:20px}
+    .brand small{display:block;font-size:10px;letter-spacing:1.8px;color:var(--muted);font-weight:700;line-height:1.1}
+    .top-cta{padding:9px 14px;border-radius:999px;background:var(--navy);color:#fff;font-size:13px;font-weight:800}
+
+    .hero{background:
+      radial-gradient(circle at 15% 15%,rgba(215,181,109,.18),transparent 26%),
+      linear-gradient(145deg,var(--navy),#071426 68%,#122b4b);color:#fff;padding:72px 0 58px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:#f3dca8;font-weight:800;font-size:13px;letter-spacing:.4px;margin:0 0 10px}
+    .eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}
+    .hero h1{font-size:clamp(34px,7vw,66px);line-height:1.15;margin:0 0 14px;letter-spacing:-1.5px}
+    .hero h1 span{color:var(--gold)}
+    .hero p{font-size:clamp(16px,2.4vw,20px);color:#d8e0ec;margin:0;max-width:680px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+    .chip{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);padding:7px 11px;border-radius:999px;font-size:12px;color:#eef3f8}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:12px 18px;font-weight:800;border:1px solid transparent;transition:.2s}
+    .btn.primary{background:var(--gold);color:#10213a}
+    .btn.secondary{border-color:rgba(255,255,255,.22);color:#fff;background:rgba(255,255,255,.05)}
+    .hero-card{position:relative;min-height:320px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border-radius:28px;padding:26px;display:grid;place-items:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
+    .doc-stack{width:min(270px,82%);position:relative}
+    .doc{aspect-ratio:3/4;border-radius:18px;background:#fff;box-shadow:0 22px 55px rgba(0,0,0,.24);padding:24px;color:var(--navy);transform:rotate(-3deg);border:1px solid #eef1f4}
+    .doc:before{content:"";display:block;width:50px;height:6px;border-radius:6px;background:var(--gold);margin-bottom:19px}
+    .doc-line{height:8px;background:#dfe5ec;border-radius:10px;margin:10px 0}
+    .doc-line.short{width:58%}.doc-line.med{width:78%}
+    .doc-box{height:72px;border-radius:12px;margin-top:22px;background:linear-gradient(135deg,#eef2f7,#f8f5eb);border:1px solid #e3e7ed}
+    .seal{position:absolute;left:-16px;bottom:24px;width:78px;height:78px;border-radius:50%;background:var(--navy);border:3px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:27px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+
+    .quick{margin-top:-20px;position:relative;z-index:3}
+    .quick .bar{display:flex;gap:8px;overflow:auto;background:#fff;padding:12px;border-radius:18px;box-shadow:var(--shadow);scrollbar-width:none}
+    .quick .bar::-webkit-scrollbar{display:none}
+    .quick a{white-space:nowrap;padding:8px 12px;border-radius:999px;background:#f4f6f8;border:1px solid #edf0f3;font-size:12px;font-weight:800;color:#405069}
+
+    section.portfolio{padding:62px 0 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
+    .section-head h2{margin:0;color:var(--navy);font-size:clamp(24px,4vw,34px)}
+    .section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}
+    .tag{font-size:11px;font-weight:900;color:#765b22;background:var(--gold-soft);border:1px solid #e7d4aa;padding:6px 9px;border-radius:999px;white-space:nowrap}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 7px 20px rgba(10,27,52,.05);display:flex;flex-direction:column;min-width:0}
+    .cover{aspect-ratio:16/10;background:#e9edf2;overflow:hidden;position:relative}
+    .cover img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+    .card:hover .cover img{transform:scale(1.025)}
+    .cover:after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(transparent,rgba(10,27,52,.18));pointer-events:none}
+    .card-body{padding:15px 16px 17px;display:flex;flex-direction:column;gap:8px;flex:1}
+    .card h3{font-size:16px;line-height:1.5;margin:0;color:#15233a}
+    .card p{font-size:12.5px;color:var(--muted);margin:0}
+    .card-link{margin-top:auto;display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:900;color:#8a6928}
+    .card-link:after{content:"↗";font-size:14px}
+
+    .research-note{margin-top:14px;padding:13px 15px;background:#fff;border:1px solid var(--line);border-radius:14px;color:var(--muted);font-size:12.5px}
+    .research-note strong{color:var(--navy)}
+
+    .cv-wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .sprite{position:relative;overflow:hidden;aspect-ratio:4/3;border-radius:16px;background:#e8ebef;border:1px solid var(--line)}
+    .sprite img{position:absolute;width:400%;height:auto;max-width:none;top:-500%;object-fit:initial}
+    .sprite.c0 img{left:0}.sprite.c1 img{left:-100%}.sprite.c2 img{left:-200%}.sprite.c3 img{left:-300%}
+    .cv-copy{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px;color:var(--muted);font-size:13px}
+    .cv-copy strong{color:var(--navy)}
+
+    .trust-card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;display:grid;grid-template-columns:.72fr 1.28fr;align-items:center}
+    .trust-card img{height:100%;object-fit:cover;min-height:230px}
+    .trust-copy{padding:26px}
+    .trust-copy h3{margin:0 0 8px;color:var(--navy);font-size:23px}
+    .trust-copy p{margin:0;color:var(--muted);font-size:14px}
+    .trust-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:16px}
+    .trust-item{padding:10px 11px;border-radius:12px;background:#f6f7f9;color:#435168;font-size:12px;font-weight:700}
+
+    .contact{padding:64px 0 92px}
+    .contact-card{background:linear-gradient(145deg,var(--navy),#0d2747);color:#fff;border-radius:28px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:var(--shadow)}
+    .contact-card h2{margin:0 0 6px;font-size:clamp(24px,4vw,36px)}
+    .contact-card p{margin:0;color:#dbe4ee;max-width:650px}
+    .wa{background:#25d366;color:#072b19;white-space:nowrap}
+
+    footer{border-top:1px solid var(--line);padding:22px 0 34px;color:#778195;font-size:12px;text-align:center}
+    .floating{position:fixed;left:16px;bottom:16px;z-index:60;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#063d21;font-weight:900;box-shadow:0 12px 28px rgba(0,0,0,.18);border:4px solid rgba(255,255,255,.85)}
+
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr}.hero-card{display:none}
+      .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .cv-wrap{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:620px){
+      .container{width:min(100% - 20px,1120px)}
+      .hero{padding:54px 0 46px}.hero h1{letter-spacing:-.6px}
+      .top-cta{font-size:12px;padding:8px 11px}
+      .grid{grid-template-columns:1fr}
+      .section-head{align-items:start}
+      section.portfolio{padding-top:48px}
+      .trust-card{grid-template-columns:1fr}.trust-card img{min-height:180px;max-height:220px}
+      .trust-list{grid-template-columns:1fr}
+      .contact-card{align-items:stretch;flex-direction:column}.wa{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container inner">
+      <a class="brand" href="#top" aria-label="العودة إلى أعلى الصفحة">
+        <span class="brand-mark">غ</span>
+        <span>غيث<small>GHAITH</small></span>
+      </a>
+      <a class="top-cta" href="https://wa.me/966548296477?text=مرحبًا،%20اطلعت%20على%20معرض%20غيث%20وأرغب%20في%20الاستفسار%20عن%20خدمة." target="_blank" rel="noopener">اطلب عبر واتساب</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">نماذج أعمال مختارة</p>
+          <h1><span>غيث</span> لتصميم وتنسيق الملفات</h1>
+          <p>نحوّل محتواك إلى ملف مرتب وجاهز للتقديم — من التقارير والمستندات إلى ملفات التدريب والمشاريع والعروض التقديمية.</p>
+          <div class="chips">
+            <span class="chip">تقارير</span><span class="chip">مستندات</span><span class="chip">ملفات تدريب ومشاريع</span><span class="chip">عروض تقديمية</span><span class="chip">PDF / Word</span><span class="chip">CV</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#training">استعرض الأعمال</a>
+            <a class="btn secondary" href="https://wa.me/966548296477?text=مرحبًا،%20أرغب%20في%20الاستفسار%20عن%20خدمة%20تصميم%20أو%20تنسيق%20ملف." target="_blank" rel="noopener">تواصل الآن</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="doc-stack">
+            <div class="doc">
+              <div class="doc-line med"></div><div class="doc-line"></div><div class="doc-line short"></div><div class="doc-box"></div><div class="doc-line"></div><div class="doc-line med"></div>
+            </div>
+            <div class="seal">غ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="quick" aria-label="فهرس الأعمال">
+      <div class="container bar">
+        <a href="#training">التدريب والإنجاز</a>
+        <a href="#documents">المستندات والمشاريع</a>
+        <a href="#presentations">العروض</a>
+        <a href="#research">تنسيق البحوث</a>
+        <a href="#cv">CV</a>
+        <a href="#reviews">آراء العملاء</a>
+      </div>
+    </nav>
+
+    <section class="portfolio" id="training">
+      <div class="container">
+        <div class="section-head"><div><h2>تقارير التدريب وملفات الإنجاز</h2><p>نماذج من ملفات تدريب وتوثيق أعمال بتنسيق متكامل.</p></div><span class="tag">الأكثر طلبًا</span></div>
+        <div class="grid">
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=15ZYN0i5DjNhWqRfbzwjyCC2f27GWsbGK&sz=w1200" alt="تقرير التدريب التعاوني"></div><div class="card-body"><h3>تقرير التدريب التعاوني — وزارة البيئة والمياه والزراعة</h3><p>إخراج تقرير تدريبي منظم وقابل للاستعراض.</p><a class="card-link" href="https://drive.google.com/file/d/15ZYN0i5DjNhWqRfbzwjyCC2f27GWsbGK/preview" target="_blank" rel="noopener">معاينة النموذج</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=14fsdM9isQaNR5wVNHLVGE-4rTh1UQ7fN&sz=w1200" alt="ملف إنجاز غرفة المدينة المنورة"></div><div class="card-body"><h3>ملف إنجاز التدريب الميداني — غرفة المدينة المنورة</h3><p>تنظيم محتوى التدريب في ملف متماسك بصريًا.</p><a class="card-link" href="https://drive.google.com/file/d/14fsdM9isQaNR5wVNHLVGE-4rTh1UQ7fN/preview" target="_blank" rel="noopener">معاينة النموذج</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1N-6Xp8hXZZiUphIikkOUnvomu2b1B0kG&sz=w1200" alt="ملف إنجاز جمعية التميز الرياضي"></div><div class="card-body"><h3>ملف إنجاز التدريب التعاوني — جمعية التميز الرياضي</h3><p>نموذج لملف إنجاز تدريبي بتصميم واضح ومهني.</p><a class="card-link" href="https://drive.google.com/file/d/1N-6Xp8hXZZiUphIikkOUnvomu2b1B0kG/preview" target="_blank" rel="noopener">معاينة النموذج</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1XlyF6XfFszJb8chFtR-ncsUN5yG7NQMD&sz=w1200" alt="تقرير التدريب مركز الرعاية الصحية"></div><div class="card-body"><h3>التقرير النهائي للتدريب — مركز الرعاية الصحية الأولية بالشويمس</h3><p>تنسيق تقرير نهائي مع بنية صفحات واضحة.</p><a class="card-link" href="https://drive.google.com/file/d/1XlyF6XfFszJb8chFtR-ncsUN5yG7NQMD/preview" target="_blank" rel="noopener">معاينة النموذج</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="documents">
+      <div class="container">
+        <div class="section-head"><div><h2>مستندات ومشاريع احترافية</h2><p>خطط، أدلة ومخرجات تطبيقية مرتبة للاستخدام المهني.</p></div></div>
+        <div class="grid">
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=17mQ1Qd36mGcr3qBpgOAkRWypxX8LyXIg&sz=w1200" alt="الخطة التطويرية لقسم الأشعة"></div><div class="card-body"><h3>الخطة التطويرية المقترحة لقسم الأشعة</h3><p>نموذج لمستند تطويري منظم ومهيأ للتقديم.</p><a class="card-link" href="https://drive.google.com/file/d/17mQ1Qd36mGcr3qBpgOAkRWypxX8LyXIg/preview" target="_blank" rel="noopener">معاينة النموذج</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1yqGKaNKZ01b2at2zffR6p4M5zj1tEDsm&sz=w1200" alt="دليل المدرب تحديد الاحتياجات التدريبية"></div><div class="card-body"><h3>دليل المدرب — تحديد الاحتياجات التدريبية</h3><p>تصميم دليل تدريبي بتسلسل بصري واضح.</p><a class="card-link" href="https://drive.google.com/file/d/1yqGKaNKZ01b2at2zffR6p4M5zj1tEDsm/preview" target="_blank" rel="noopener">معاينة النموذج</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=12LQjslnSCwqMXrNcsY0OUfI0eerH9yQN&sz=w1200" alt="تقويم الصحة المدرسية"></div><div class="card-body"><h3>التقويم الزمني لأعمال لجنة الصحة المدرسية</h3><p>تنظيم جداول ومحتوى تنفيذي داخل ملف بصري واحد.</p><a class="card-link" href="https://drive.google.com/file/d/12LQjslnSCwqMXrNcsY0OUfI0eerH9yQN/preview" target="_blank" rel="noopener">معاينة النموذج</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="presentations">
+      <div class="container">
+        <div class="section-head"><div><h2>العروض التقديمية</h2><p>نماذج مختلفة لإخراج الشرائح حسب طبيعة المحتوى والجمهور.</p></div></div>
+        <div class="grid">
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1vQrPM-ox4eomM5IX-AtBNWgXwHMgoIfv&sz=w1200" alt="عرض حج صحي"></div><div class="card-body"><h3>حج صحي — عرض تقديمي بصري</h3><p>عرض بصري بمحتوى توعوي وهوية متماسكة.</p><a class="card-link" href="https://drive.google.com/file/d/1vQrPM-ox4eomM5IX-AtBNWgXwHMgoIfv/preview" target="_blank" rel="noopener">معاينة العرض</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1WESFkzgWL-ZP3Ai9pGkIOnox8H8pEEnP&sz=w1200" alt="عرض الصناعة الفندقية"></div><div class="card-body"><h3>الصناعة الفندقية</h3><p>نموذج عرض تقديمي منظم لمحتوى تخصصي.</p><a class="card-link" href="https://drive.google.com/file/d/1WESFkzgWL-ZP3Ai9pGkIOnox8H8pEEnP/preview" target="_blank" rel="noopener">معاينة العرض</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1b0dFKE8pf3RjhP2i6Ept5eHmLgNXWgCj&sz=w1200" alt="عرض تسويقي لفيلا"></div><div class="card-body"><h3>عرض تسويقي لفيلا فاخرة</h3><p>عرض يعتمد على الصورة والمساحات النظيفة لإبراز المحتوى.</p><a class="card-link" href="https://drive.google.com/file/d/1b0dFKE8pf3RjhP2i6Ept5eHmLgNXWgCj/preview" target="_blank" rel="noopener">معاينة العرض</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="research">
+      <div class="container">
+        <div class="section-head"><div><h2>تنسيق البحوث والتقارير الأكاديمية</h2><p>نماذج لإظهار أسلوب تنظيم الصفحات والعناوين والمراجع.</p></div></div>
+        <div class="grid">
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1M_1qUxsCkBMFmLiVRenKhmUW1B1E-Mf6&sz=w1200" alt="بحث أثر ممارسة كرة الطائرة"></div><div class="card-body"><h3>أثر ممارسة كرة الطائرة في تنمية المهارات الاجتماعية</h3><p>نموذج لإخراج بحث أكاديمي منظم.</p><a class="card-link" href="https://drive.google.com/file/d/1M_1qUxsCkBMFmLiVRenKhmUW1B1E-Mf6/preview" target="_blank" rel="noopener">معاينة التنسيق</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1beSoP6Gazc9GB5NmQVsx1PAy8HIBK15H&sz=w1200" alt="بحث فقهي مقارن"></div><div class="card-body"><h3>مبطلات التيمم — بحث فقهي مقارن</h3><p>تنسيق بحث نصي كثيف مع تسلسل واضح للعناوين.</p><a class="card-link" href="https://drive.google.com/file/d/1beSoP6Gazc9GB5NmQVsx1PAy8HIBK15H/preview" target="_blank" rel="noopener">معاينة التنسيق</a></div></article>
+          <article class="card"><div class="cover"><img loading="lazy" src="https://drive.google.com/thumbnail?id=17xPoU5eJlOh-5Qv7Gc4RhtB8GKFClWjF&sz=w1200" alt="بحث الرحمة في الإسلام"></div><div class="card-body"><h3>الرحمة في الإسلام: مفهومها ومظاهرها</h3><p>نموذج لتنسيق بحث أكاديمي وإخراجه بصورة مرتبة.</p><a class="card-link" href="https://drive.google.com/file/d/17xPoU5eJlOh-5Qv7Gc4RhtB8GKFClWjF/preview" target="_blank" rel="noopener">معاينة التنسيق</a></div></article>
+        </div>
+        <div class="research-note"><strong>ملاحظة:</strong> عرض هذه النماذج هنا يركز على التنسيق والإخراج البصري للمستندات.</div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="cv">
+      <div class="container">
+        <div class="section-head"><div><h2>CV وفق نظام ATS</h2><p>نماذج مختارة مع إخفاء الأسماء وبيانات الاتصال.</p></div><span class="tag">خدمة إضافية</span></div>
+        <div class="cv-wrap" aria-label="معاينات CV">
+          <div class="sprite c0"><img loading="lazy" src="https://raw.githubusercontent.com/madardigital/hafed-portfolio/main/assets/portfolio-project-atlas-v4.jpg" alt="نموذج CV 1"></div>
+          <div class="sprite c1"><img loading="lazy" src="https://raw.githubusercontent.com/madardigital/hafed-portfolio/main/assets/portfolio-project-atlas-v4.jpg" alt="نموذج CV 2"></div>
+          <div class="sprite c2"><img loading="lazy" src="https://raw.githubusercontent.com/madardigital/hafed-portfolio/main/assets/portfolio-project-atlas-v4.jpg" alt="نموذج CV 3"></div>
+          <div class="sprite c3"><img loading="lazy" src="https://raw.githubusercontent.com/madardigital/hafed-portfolio/main/assets/portfolio-project-atlas-v4.jpg" alt="نموذج CV 4"></div>
+        </div>
+        <div class="cv-copy"><strong>الهدف:</strong> تقديم CV مهني، واضح، قابل للقراءة ومتوافق مع أنظمة تتبع المتقدمين عند الحاجة، دون إضافة معلومات أو خبرات غير موجودة لدى صاحب السيرة.</div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="reviews">
+      <div class="container">
+        <div class="section-head"><div><h2>آراء العملاء</h2><p>قسم الثقة سنوسعه لاحقًا بأفضل الردود بعد تنقيحها وإخفاء البيانات.</p></div></div>
+        <div class="trust-card">
+          <img loading="lazy" src="https://raw.githubusercontent.com/madardigital/hafed-portfolio/main/assets/testimonials-cover.jpg" alt="ردود العملاء — مختارات">
+          <div class="trust-copy">
+            <h3>ردود بعد التسليم</h3>
+            <p>لدينا مجموعة من الردود السابقة، وسنضيف هنا لاحقًا المختارات الأكثر دلالة على جودة التنسيق والتسليم والتعديلات.</p>
+            <div class="trust-list"><div class="trust-item">نماذج حقيقية من أعمال سابقة</div><div class="trust-item">إخفاء بيانات العملاء الحساسة</div><div class="trust-item">عرض مختصر يناسب الهاتف</div><div class="trust-item">إضافة نماذج جديدة تدريجيًا</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div><h2>لديك ملف أو خدمة مختلفة؟</h2><p>أرسل التفاصيل عبر واتساب لمعرفة إمكانية التنفيذ، والمدة والتكلفة المناسبة.</p></div>
+          <a class="btn wa" href="https://wa.me/966548296477?text=مرحبًا،%20اطلعت%20على%20نماذج%20غيث%20وأرغب%20في%20الاستفسار%20عن%20خدمة." target="_blank" rel="noopener">تواصل عبر واتساب</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">غيث — تصميم وتنسيق ملفات احترافية</div></footer>
+  <a class="floating" href="https://wa.me/966548296477?text=مرحبًا،%20أرغب%20في%20الاستفسار%20عن%20خدمة." target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">و</a>
+</body>
+</html>
